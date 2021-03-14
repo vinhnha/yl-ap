@@ -2,9 +2,14 @@
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
 net config server /srvcomment:"Windows Azure VM" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
-curl -O https://raw.githubusercontent.com/vongocbao/WindowsRDP/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/vongocbao/WindowsRDP/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\EVKey Vietnamese Keyboard.exe" https://raw.githubusercontent.com/vongocbao/WindowsRDP/main/EVKey64.exe > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/Motdulieu/Vps-AP/main/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\FastConfigVPS_v5.1.exe" https://raw.githubusercontent.com/Motdulieu/Vps-AP/main/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\EVKey64" https://raw.githubusercontent.com/Motdulieu/Vps-AP/main/EVKey64.exe > out.txt 2>&1
+
+curl -o "C:\Users\Public\Desktop\winrar-x64-600.exe" https://raw.githubusercontent.com/Motdulieu/Vps-AP/main/winrar-x64-600.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\idman638build18.exe" https://raw.githubusercontent.com/Motdulieu/Vps-AP/main/idman638build18.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\FshareSetup_5.3.0.174.exe" https://raw.githubusercontent.com/Motdulieu/Vps-AP/main/FshareSetup_5.3.0.174.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Motdulieu_AirExplorer2.8.1.zip" https://raw.githubusercontent.com/Motdulieu/Vps-AP/main/Motdulieu_AirExplorer2.8.1.zip > out.txt 2>&1
 net user administrator Motdulieu2021 /add >nul
 net localgroup administrators administrator /add >nul
 net user administrator /active:yes >nul
