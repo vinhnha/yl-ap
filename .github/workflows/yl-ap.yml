@@ -1,12 +1,11 @@
 name: yl
 
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 
 jobs:
   build:
 
-    runs-on: windows-latest
-    timeout-minutes: 9999
+    runs-on: windows-2022
 
     steps:
     - name: Download Ngrok & NSSM
